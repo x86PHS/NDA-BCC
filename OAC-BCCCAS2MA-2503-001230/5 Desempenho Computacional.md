@@ -82,3 +82,31 @@ $$
 $$
 2.5=\frac{200}{s(n)}=s(n)=\frac{200}{2.5}=80s\to\frac{200}{80}=2.5
 $$
+### Speedup Com Aceleração
+
+$$
+S = \frac{1}{(1-f)+\frac{1}{K}}
+$$
+$$
+Smax=\frac{1}{(1-f)}
+$$
+
+- Exemplo Exercício
+
+```
+Suponha que um compilador otimiza as instruções de acesso à memória, tornando-as 4 vezes mais rápidas. Antes dessa melhoria, o tempo de execução de um benchmark era de 20 segundos, dos quais 40% do tempo era gasto
+em acessos à memória.
+
+a. Qual será o speedup após essa melhoria?
+b. Qual o speedup máximo teórico que poderia ser alcançado neste benchmark apenas com essa otimização?
+```
+
+$$
+S=\frac{1}{(1-0.4)+\frac{0.4}{4}}=\frac{1}{(0.6)+0.1}=\frac{1}{0.7}=1.43
+$$
+$$
+\frac{20}{1.43}=14s
+$$
+$$
+Smax=\frac{1}{(1-f)}=\frac{1}{1-0,4}=\frac{1}{0.6}=1.67
+$$
