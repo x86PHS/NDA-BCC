@@ -26,7 +26,7 @@
  n = \frac{D(b)}{D(a)}$$
  - Medição para comprar o desempenho entre dois sistemas
 $$
-N = \frac{1}{\frac{t(b)}{\frac{1}{t(a)}}}$$
+N = \frac{t(b)}{t(a)}$$
 
 #### Speedup
 
