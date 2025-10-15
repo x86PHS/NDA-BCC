@@ -1,0 +1,7 @@
+### Notação BigO e suas Variantes
+
+- A notação O se dá esse nome pela letra O em maiúsculo em função da quantidade de operantes que se dá um algoritmo. Isso baseia-se tecnicamente numa análise para visualizar quando tempo um algoritmo demanda para processar X quantidades de dados por exemplo.
+
+- Sua notação é a seguinte: $O(n)$. Basicamente, há algoritmos que rodam em tempo logarítmico, linear, fatorial etc. Entretanto, o caso mais desejável seria logarítmico, já que em algoritmos logarítmicos conforme aumenta o tamanho do problema, o seu tempo aumenta drasticamente bem pouco. Diferente de Linear ou fatorial mesmo, o tempo demandado de processamento é muito maior.
+
+- Um exemplo de algoritmo logarítmico seria esse: `Quero buscar um nome em uma caneta entre 100 pessoas. Quantas vezes vão ser necessárias para eu achar essa caneta?`. O pior caso seria você ter que procurar 100 vezes, isso, garantindo que ela esteja nesse meio. Entretanto, em um algoritmo logarítmico, fazemos o seguinte cálculo: $O(\log_{2}100)=7$ Tal que $2^7= 128$ aproximadamente apenas 7 vezes podemos perguntar nesse algoritmo para realizar o termino desse problema. Caso a gente fizesse em um algoritmo linear, teríamos que perguntar 100 vezes.

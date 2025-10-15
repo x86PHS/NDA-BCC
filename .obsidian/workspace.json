@@ -11,10 +11,14 @@
             "id": "ec8ef409f76b0933",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OAC-BCCCAS2MA-2503-001230/6 Introdução a Assembly.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "6 Introdução a Assembly"
             }
           }
         ]
@@ -88,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 200
   },
   "right": {
     "id": "0184da6528d7cb4c",
@@ -191,9 +195,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0d7fef968d0856a3",
+  "active": "ec8ef409f76b0933",
   "lastOpenFiles": [
     "OAC-BCCCAS2MA-2503-001230/5 Desempenho Computacional.md",
+    "OAC-BCCCAS2MA-2503-001230/6 Introdução a Assembly.md",
+    "AP/Notação e Análise de Algoritmos/Tipos de Notação.md",
+    "AP/Matrizes.md",
+    "AP/Laços de Repetição.md",
+    "AP/Functions.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes/1 Modelo Relacional.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes/5 Axiomas de Armstrong.md",
+    "BD-BCCCAS2MA-2503-002024/Untitled/Untitled",
+    "BD-BCCCAS2MA-2503-002024/Normalização",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes/4 Procurando Atributos próximos e Chaves candidatas.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes/3 Dependências Funcionais.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes/2 Chaves.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo ER/1 Introdução ao Modelo ER.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo Relacional e Funções Dependentes",
+    "BD-BCCCAS2MA-2503-002024/Modelo ER/3  Minimização de Diagramas ER.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo ER/2 Modelo ER Aprimorado.md",
+    "BD-BCCCAS2MA-2503-002024/Introdução/2 Introdução de Arquitetura.md",
+    "BD-BCCCAS2MA-2503-002024/Modelo ER",
+    "BD-BCCCAS2MA-2503-002024/Introdução",
+    "BD-BCCCAS2MA-2503-002024/Introdução/1 Introdução Geral.md",
+    "AP/Notação e Análise de Algoritmos",
     "AP/Linguagens/C/Strings/Strings e Arrays.md",
     "AP/Linguagens/C/Strings",
     "OAC-BCCCAS2MA-2503-001230/1 O que são Computadores.md",
@@ -201,36 +226,15 @@
     "OAC-BCCCAS2MA-2503-001230/3 Funcionamento da Memória.md",
     "OAC-BCCCAS2MA-2503-001230/2 Arquiteturas Computacionais.md",
     "README.md",
-    "BD-BCCCAS2MA-2503-002024/Introdução ao Modelo ER.md",
-    "BD-BCCCAS2MA-2503-002024/Introdução de Arquitetura.md",
-    "BD-BCCCAS2MA-2503-002024/Introdução Geral.md",
     "BD-BCCCAS2MA-2503-002024/1.1 O que é um banco de Dados.md",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/invertestring.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/multiplicador.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/blocossoma.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/fibonnaci.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/recursaoBusca1.2.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/recursaoSoma1.1.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/recursaoSoma.c",
-    "AP/APII-BCCCAS2MA-2503-001229/Recursão/recursao.c",
+    "AP/Recursão/invertestring.c",
+    "AP/Recursão/multiplicador.c",
+    "AP/Recursão/blocossoma.c",
     "SenacBCC/README.md",
-    "SenacBCC",
     "REFS-AULA-0509.md",
     "Brain/Ciência da Computação/Arquitetura de Computadores/OAC/1 O que são Computadores.md",
-    "Brain/Ciência da Computação/Arquitetura de Computadores/OAC/2 Sistemas Computacionais.md",
-    "Brain/Languages/English/Unit 03/19 Immersion Time.md",
-    "Brain/Languages/English/Unit 03/18 Grammar Hacks II.md",
-    "Brain/Languages/English/Unit 03/17 Grammar Hacks I.md",
-    "Brain/Ciência da Computação/Algoritmos/Linguagens/C/Estruturas/Structures.md",
-    "Brain/Ciência da Computação/Arquitetura de Computadores/OAC/1 Introdução.md",
-    "Brain/Ciência da Computação/Banco de Dados/1. Introdução.md",
-    "Brain/Matemática/Geometria Analítica/1. Introdução Vetorial.md",
-    "Brain/Languages/English/Unit 03/16 Comprehension Practice.md",
-    "Brain/Languages/English/Unit 02/12 Grammar Hacks (Part II).md",
-    "Brain/Ciência da Computação/Banco de Dados/1.1 O que é um banco de Dados.md",
     "Pasted image 20250822102301.png",
     "Brain/Ciência da Computação/Banco de Dados/Untitled.canvas",
-    "Untitled.md",
     "Brain/Religião/Catolicismo/Untitled.canvas",
     "Brain/Source Materials/Image/Pasted image 20250723182111.png",
     "Brain/Source Materials/Image/Pasted image 20250723182036.png",
