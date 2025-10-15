@@ -2,5 +2,7 @@
   "promptDelete": false,
   "showInlineTitle": false,
   "showUnsupportedFiles": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": true,
+  "showLineNumber": false
 }

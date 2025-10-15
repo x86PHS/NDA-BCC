@@ -34,10 +34,5 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "Brain": "LiBrainCircuit",
-  "Brain/Hacking": "LiAirVent",
-  "Brain/Soft Skills": "LiAlarmPlus",
-  "Brain/Matemática": "LiPi",
-  "Brain/Languages": "LiLanguages",
-  "Brain/Cultura e Religião": "LiBrainCog"
+  "Brain": "LiBrainCircuit"
 }
