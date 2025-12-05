@@ -1,0 +1,169 @@
+\usepackage[utf8]{inputenc}	% Codificacao do documento (conversão automática dos acentos)
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage{lmodern}	        % Usa a fonte Latin Modern
+
+
+%-----------------------------------------------------------
+% BIBLIOGRAFIA
+%-----------------------------------------------------------
+% \usepackage[style=abnt, backref=false, language=brazil]{biblatex} % Carrega o estilo ABNT
+\usepackage{biblatex}
+\usepackage[brazilian]{babel} % Suporte ao idioma brasileiro
+\addbibresource{Referencias.bib}
+
+
+% ---------------------------------------
+% PACOTES ESSENCIAIS
+% ---------------------------------------
+% CORES
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
+\definecolor{mintedgreen}{HTML}{155C12}
+\definecolor{mintedgreenNovo}{HTML}{0B610B}
+
+\usepackage{graphicx} % imagens
+\usepackage{float} % para \begin{figure}[H]
+% \usepackage{caption} % legenda de figuras\tabelas
+\usepackage{subcaption} % para usar o ambiente subfigure/subcaption
+
+\captionsetup[figure]{font={footnotesize}} % ALTERAÇÃO: fonte menor na legenda de figuras
+\captionsetup[table]{font={footnotesize}} % ALTERAÇÃO: fonte menor na legenda de tabelas
+% \usepackage{subfigure} %para subfiguras (Figura 1a, 1b, ...)
+
+\usepackage{booktabs} % Para \toprule, \midrule, \bottomrule
+
+\usepackage{pdfpages} % CAPA
+\pdfmajorversion=1
+\pdfminorversion=7
+
+\usepackage{emptypage} % Garante que páginas em branco sejam realmente em branco
+\usepackage{appendix} % Apêndice
+
+\usepackage{indentfirst} % Indenta o primeiro parágrafo
+\usepackage{microtype} % para melhorias de justificação
+\usepackage{setspace} % para \begin{spacing} [...] \end{spacing}
+
+\usepackage{enumerate} % listas enumeradas
+\usepackage{enumitem} % listas pontilhadas
+
+\usepackage{titlesec} % Personalização de títulos
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}
+
+% escita matemática:
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,amsthm}
+\usepackage{bigints} % integrais maiores
+
+\usepackage{siunitx} % para \celsius
+
+\usepackage{url} % usar \url{}
+\urlstyle{same}
+
+% \usepackage{chngcntr} % Pacote necessário para redefinir os contadores
+% \counterwithin{figure}{section} % Faz as figuras serem numeradas por subsection
+
+% \usepackage{extsizes} % Suporte para tamanhos de fonte maiores
+
+\usepackage{lipsum} % para texto de exemplo
+
+\usepackage{graphics}
+
+
+% ---------------------------------------
+% AMBIENTE \begin{blocks}
+% ---------------------------------------
+\usepackage[most,theorems]{tcolorbox}
+
+\newtcolorbox{blocks}[1]{
+	colback=black!5!white,     % Cor de fundo do corpo do texto
+	colframe=black!70!white,   % Cor da fundo do título
+	fonttitle=\bfseries,
+	title={#1},
+	enhanced,                  % Melhora a aparência
+	boxrule=0.4pt,             % Espessura da borda
+	arc=4pt                    % Arredondamento dos cantos
+}
+
+\newtcbtheorem[auto counter, number within=chapter]{teorema}{Teorema}{%
+    colback=mintedgreen!5!white,    % Cor de fundo do corpo do texto
+	colframe=mintedgreen!70!white,  % Cor da fundo do título
+	fonttitle=\bfseries,
+    title={#1},
+	enhanced,                      % Melhora a aparência
+	boxrule=0.4pt,                 % Espessura da borda
+	arc=4pt,                       % Arredondamento dos cantos
+}{teorema} % Prefixo para labels (ex: \label{teorema:meu_teorema})
+
+\theoremstyle{definition} % Texto normal, título em negrito
+\newtheorem{exemplo}{\( \blacksquare \) Exemplo}[chapter] % para exemplos numerados pelo capítulo
+
+
+
+
+
+% ---------------------------------------
+% HYPER LINKS
+% ---------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+	%pagebackref=true,
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=black,          	% color of internal links
+	citecolor=OliveGreen,            % color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=OliveGreen,
+	bookmarksdepth=4
+}
+
+% ---------------------------------------
+% GRÁFICOS
+% ---------------------------------------
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{
+	angles, % Para desenhar o ângulo theta
+	quotes, % Para colocar o rótulo no ângulo
+	decorations.pathreplacing % Para desenhar a chave sob o eixo x
+}
+
+%usepackage[mode=buildnew]{standalone}
+%\usepackage{import}
+\pgfplotsset{compat=1.9}
+%\usepgfplotslibrary{patchplots}
+%\usepgfplotslibrary{external}
+%\usetikzlibrary{external}
+%\tikzset{
+	%external/system call={xelatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource"}}
+%\tikzexternalize[prefix=tikz/]
+
+
+% ---------------------------------------
+% PARA CÓDIGOS
+% ---------------------------------------
+\usepackage{fvextra} % Necessário para 'linenos' funcionar
+\usepackage{csquotes} % adicionar DEPOIS de \usepackage{fvextra}
+\MakeOuterQuote{"} % para usar aspas "
+
+\usepackage{minted}
+\setminted{
+    %style=friendly,     % 4. Muda o estilo para um sem itálico nos comentários
+    %fontsize=\small,
+    linenos,            % Habilita números de linha
+    breaklines,
+    frame=single,
+    xleftmargin=1em,    % 1. Empurra tudo para dentro da margem
+    numbersep=5pt       % 2. Aproxima os números do código
+}
+
+% \usepackage{listings}
+% \renewcommand{\listingscaption}{Código}
+
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[fileext=loc, within=chapter]{codigo}
+\floatname{codigo}{Código} % nome na legenda
+\captionsetup[codigo]{skip=-3mm} % distância entre código e legenda

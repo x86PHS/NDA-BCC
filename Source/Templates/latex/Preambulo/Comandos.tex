@@ -1,0 +1,39 @@
+% ---------------------------------------------------
+% COMANDOS
+% ---------------------------------------------------
+
+
+% ---------------------------------------------------
+% QUADRADOS NO FIM DA RESOLUÇÃO OU PROVA MATEMÁTICA
+% ---------------------------------------------------
+\newcommand{\fimresolucao}{%
+	\ifmmode%
+	   \tag*{$\square$}% Modo matemático (alinhado à direita como \tag*)
+	\else%
+	   \hfill $\square$% Modo texto (alinhado à direita com \hfill)
+	\fi%
+}
+
+\newcommand{\fimprova}{%
+	\ifmmode%
+	   \tag*{$\blacksquare$}% Modo matemático
+	\else%
+	   \hfill $\blacksquare$% Modo texto
+	\fi%
+}
+
+
+
+% ---------------------------------------------------
+% Numeração das definições, exemplos, observações e teoremas 
+% ---------------------------------------------------
+% \theoremstyle{definition} % Texto normal, título em negrito
+
+% \newtheorem{definicao}{Definição}[chapter] % para definições numeradas pelo capítulo
+
+% \newtheorem{observacao}{Observação}[chapter] % para observações numeradas pelo capítulo
+
+% \newtheorem{teorema}{Teorema}[chapter] % para teoremas numerados pela pelo capítulo
+
+% % não é usado dentro do ambiente blocks *veja o capítulo 1
+% \newtheorem{exemplo}{\( \blacksquare \) Exemplo}[chapter] % para exemplos numerados pelo capítulo

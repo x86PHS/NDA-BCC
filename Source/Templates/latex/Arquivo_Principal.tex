@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.0 (26 de setembro de 2025)
+% Author: Enzo Libório Fraga (enzoliborio@academico.ufs.br)
+% License: CC BY 4.0
+% Disponível em: https://github.com/enzoliborio/Notas_de_Aulas-template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,openright,twoside,a4paper,english,brazil]{book}
+
+\input{Preambulo/Pacotes}
+\input{Preambulo/Dados}
+\input{Preambulo/Comandos}
+
+% Configuração das margens
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+
+
+% -------------------------------------------------------
+% DOCUMENTO
+% -------------------------------------------------------
+\begin{document}
+	
+	% -------------------------------------------------------
+	% PRÉ-TEXTUAL
+    % -------------------------------------------------------
+    % Aqui estão os elementos anteriores ao corpo do texto.
+    % Estão pré-adicionados somente o Resumo e Prefácio, mas pode-se adicionar mais, como dedicatória, lista de figuras, etc
+    % Lembre de criar, para cada um novo, um documento .tex na pasta "Pre_textual"
+	% -------------------------------------------------------
+	\frontmatter
+	
+	% ---- CAPA ----
+	\thispagestyle{empty}
+	\include{Pre_textual/Capa.tex}
+	
+	%\include{Pre_textual/Dedicatoria.tex} % a dedicatória, por exemplo, vem anterior ao sumário
+	
+	% ---- SUMÁRIO ----
+	\begin{spacing}{0.8}
+		\pdfbookmark[0]{\contentsname}{toc}
+		\tableofcontents
+	\end{spacing}
+	
+	% ---- RESUMO e PREFÁCIO ----
+	\include{Pre_textual/Resumo.tex}
+	\include{Pre_textual/Prefacio.tex}
+	
+	
+	
+	% ----------------------------------------
+	% Inicia o corpo principal do texto
+	% ----------------------------------------
+	\mainmatter
+	
+	% ---- CAPÍTULOS ----
+    \include{Capítulos/00_Introducao_ao_template.tex} % apague essa linha
+    
+    % ---- Descomente essas linhas para adicionar seus capítulos ----
+    % ---- Lembre de criar um novo documento .tex na pasta "Capítulos"----
+	\include{Capítulos/01_cap01.tex}
+	% \include{Capítulos/02_cap02.tex}
+	% \include{Capítulos/03_cap03.tex}
+	
+	% APÊNDICES
+	\begin{appendices}
+		%\include{Pos_textual/Apendice01.tex}
+	\end{appendices}
+	
+	
+	
+	% -------------------------------------------------------
+	% PÓS-TEXTUAL
+	% -------------------------------------------------------
+	\backmatter
+	
+	% ---- BIBLIOGRAFIA ----
+	\nocite{*}
+	\printbibliography[heading=bibintoc, title={Referências Bibliográficas}] % "bibintoc" inclui no sumário
+	
+	
+\end{document}
